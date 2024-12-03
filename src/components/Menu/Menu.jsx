@@ -1,6 +1,4 @@
 import React from "react";
-// import Zoom from "react-reveal/Zoom";
-// import Fade from "react-reveal/Fade";
 import { FaHome } from "react-icons/fa";
 import {
   FcAbout,
@@ -12,122 +10,104 @@ import { TbSortAscending } from "react-icons/tb";
 import { RiContactsFill } from "react-icons/ri";
 import { Link } from "react-scroll";
 import { useTheme } from "../../context/ThemeContext";
-// const Menu = ({ open }) => {
 const Menu = () => {
-  const {open} = useTheme();
+  const { open } = useTheme();
 
   return (
     <>
       {open ? (
         <>
-<<<<<<< HEAD
-          {/* <Zoom> */}
-=======
-{/*           <Zoom> */}
->>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
-            <img
-              src="/profile.jpg"
-              alt="profile_pic"
-              className="w-32 rounded-tr-full mx-auto"
-            />
-<<<<<<< HEAD
-          {/* </Zoom> */}
-          {/* <Fade left> */}
-=======
-{/*           </Zoom> */}
-{/*           <Fade left> */}
->>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
-            <div className="ml-4 text-white flex flex-col gap-4 mt-4">
-              <Link
-                to="home"
-                activeClass="text-blue-400"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={400}
-              >
-                <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
-                  <FaHome size={23} /> <span>Home</span>
-                </p>
-              </Link>
-              <Link
-                to="About"
-                activeClass="text-blue-400"
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-100}
-              >
-                <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
-                  <FcAbout size={23} /> <span>About</span>
-                </p>
-              </Link>
-              <Link
-                to="WorkExp"
-                activeClass="text-blue-400"
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-100}
-              >
-                <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
-                  <TbSortAscending size={23} /> <span>Work Experience</span>
-                </p>
-              </Link>
-              <Link
-                to="techstack"
-                activeClass="text-blue-400"
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-100}
-              >
-                <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
-                  <FcBiotech size={23} /> <span>Tech Stack</span>
-                </p>
-              </Link>
-              <Link
-                to="Education"
-                activeClass="text-blue-400"
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-100}
-              >
-                <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
-                  <FcReadingEbook size={23} /> <span>Education</span>
-                </p>
-              </Link>
-              <Link
-                to="Projects"
-                activeClass="text-blue-400"
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-60}
-              >
-                <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
-                  <FcVideoProjector size={23} /> <span>Projects</span>
-                </p>
-              </Link>
-              <Link
-                to="Contact"
-                activeClass="text-blue-400"
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-120}
-              >
-                <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
-                  <RiContactsFill size={23} /> <span>Contact</span>
-                </p>
-              </Link>
-            </div>
-<<<<<<< HEAD
-          {/* </Fade> */}
-=======
-{/*           </Fade> */}
->>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
+          <img
+            src="/profile.jpg"
+            alt="profile_pic"
+            className="w-32 rounded-tr-full mx-auto"
+          />
+          <div className="ml-4 text-white flex flex-col gap-4 mt-4">
+            <Link
+              to="home"
+              activeClass="text-blue-400"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={400}
+            >
+              <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
+                <FaHome size={23} /> <span>Home</span>
+              </p>
+            </Link>
+            <Link
+              to="About"
+              activeClass="text-blue-400"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-100}
+            >
+              <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
+                <FcAbout size={23} /> <span>About</span>
+              </p>
+            </Link>
+            <Link
+              to="WorkExp"
+              activeClass="text-blue-400"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-100}
+            >
+              <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
+                <TbSortAscending size={23} /> <span>Work Experience</span>
+              </p>
+            </Link>
+            <Link
+              to="techstack"
+              activeClass="text-blue-400"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-100}
+            >
+              <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
+                <FcBiotech size={23} /> <span>Tech Stack</span>
+              </p>
+            </Link>
+            <Link
+              to="Education"
+              activeClass="text-blue-400"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-100}
+            >
+              <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
+                <FcReadingEbook size={23} /> <span>Education</span>
+              </p>
+            </Link>
+            <Link
+              to="Projects"
+              activeClass="text-blue-400"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-60}
+            >
+              <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
+                <FcVideoProjector size={23} /> <span>Projects</span>
+              </p>
+            </Link>
+            <Link
+              to="Contact"
+              activeClass="text-blue-400"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-120}
+            >
+              <p className="flex cursor-pointer hover:text-blue-400 gap-2 items-center">
+                <RiContactsFill size={23} /> <span>Contact</span>
+              </p>
+            </Link>
+          </div>
         </>
       ) : (
         <div className="text-white flex justify-center items-center flex-col gap-4 pt-8 mt-24">

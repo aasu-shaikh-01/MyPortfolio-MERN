@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import Resume from "../../assets/docs/pdf-test.pdf";
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
-// import Fade from "react-reveal/Fade";
 import { useTheme } from "../../context/ThemeContext";
 import Typewriter from "typewriter-effect";
 
@@ -45,34 +44,24 @@ const Home = () => {
             />
           </h1>
         </div>
-<<<<<<< HEAD
-        {/* <Fade bottom> */}
-=======
-{/*         <Fade bottom> */}
->>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
-          <div className="flex gap-8 mt-8">
-            <NavLink
-              to={Resume}
-              target="_blank"
-              download={"MyResume.pdf"}
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out"
-            >
-              My Resume
-            </NavLink>
+        <div className="flex gap-8 mt-8">
+          <NavLink
+            to={Resume}
+            target="_blank"
+            download={"MyResume.pdf"}
+            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out"
+          >
+            My Resume
+          </NavLink>
 
-            <NavLink
-              to={"https://web.whatsapp.com/send?phone=8002895833"}
-              target="_blank"
-              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 hover:scale-105 transition duration-300 ease-in-out"
-            >
-              Hire Me
-            </NavLink>
-          </div>
-<<<<<<< HEAD
-        {/* </Fade> */}
-=======
-{/*         </Fade> */}
->>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
+          <NavLink
+            to={"https://web.whatsapp.com/send?phone=8002895833"}
+            target="_blank"
+            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 hover:scale-105 transition duration-300 ease-in-out"
+          >
+            Hire Me
+          </NavLink>
+        </div>
       </div>
     </div>
   );
