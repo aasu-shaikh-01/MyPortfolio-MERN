@@ -20,14 +20,23 @@ const Menu = () => {
     <>
       {open ? (
         <>
+<<<<<<< HEAD
           {/* <Zoom> */}
+=======
+{/*           <Zoom> */}
+>>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
             <img
               src="/profile.jpg"
               alt="profile_pic"
               className="w-32 rounded-tr-full mx-auto"
             />
+<<<<<<< HEAD
           {/* </Zoom> */}
           {/* <Fade left> */}
+=======
+{/*           </Zoom> */}
+{/*           <Fade left> */}
+>>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
             <div className="ml-4 text-white flex flex-col gap-4 mt-4">
               <Link
                 to="home"
@@ -114,7 +123,11 @@ const Menu = () => {
                 </p>
               </Link>
             </div>
+<<<<<<< HEAD
           {/* </Fade> */}
+=======
+{/*           </Fade> */}
+>>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
         </>
       ) : (
         <div className="text-white flex justify-center items-center flex-col gap-4 pt-8 mt-24">

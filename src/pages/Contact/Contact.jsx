@@ -51,7 +51,11 @@ const Contact = () => {
       });
     try {
       await axios
+<<<<<<< HEAD
         .post("https://myportfolio-x32w.onrender.com", {
+=======
+        .post("https://myportfolio-x32w.onrender.com/api/v1/message/send", {
+>>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
           name,
           email,
           message,

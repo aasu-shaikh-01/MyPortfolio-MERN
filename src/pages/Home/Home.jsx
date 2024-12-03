@@ -45,7 +45,11 @@ const Home = () => {
             />
           </h1>
         </div>
+<<<<<<< HEAD
         {/* <Fade bottom> */}
+=======
+{/*         <Fade bottom> */}
+>>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
           <div className="flex gap-8 mt-8">
             <NavLink
               to={Resume}
@@ -64,7 +68,11 @@ const Home = () => {
               Hire Me
             </NavLink>
           </div>
+<<<<<<< HEAD
         {/* </Fade> */}
+=======
+{/*         </Fade> */}
+>>>>>>> acb55c1b37a5bd6e8d87921f062c9ff6918caae2
       </div>
     </div>
   );
