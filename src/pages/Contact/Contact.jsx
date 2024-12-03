@@ -51,7 +51,7 @@ const Contact = () => {
       });
     try {
       await axios
-        .post("https://myportfolio-x32w.onrender.com", {
+        .post("https://myportfolio-x32w.onrender.com/api/v1/message/send", {
           name,
           email,
           message,
