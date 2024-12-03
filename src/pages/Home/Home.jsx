@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Resume from "../../assets/docs/pdf-test.pdf";
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import { useTheme } from "../../context/ThemeContext";
 import Typewriter from "typewriter-effect";
 
@@ -45,7 +45,7 @@ const Home = () => {
             />
           </h1>
         </div>
-        <Fade bottom>
+        {/* <Fade bottom> */}
           <div className="flex gap-8 mt-8">
             <NavLink
               to={Resume}
@@ -64,7 +64,7 @@ const Home = () => {
               Hire Me
             </NavLink>
           </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
     </div>
   );

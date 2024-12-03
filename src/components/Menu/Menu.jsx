@@ -1,6 +1,6 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+// import Zoom from "react-reveal/Zoom";
+// import Fade from "react-reveal/Fade";
 import { FaHome } from "react-icons/fa";
 import {
   FcAbout,
@@ -20,14 +20,14 @@ const Menu = () => {
     <>
       {open ? (
         <>
-          <Zoom>
+          {/* <Zoom> */}
             <img
               src="/profile.jpg"
               alt="profile_pic"
               className="w-32 rounded-tr-full mx-auto"
             />
-          </Zoom>
-          <Fade left>
+          {/* </Zoom> */}
+          {/* <Fade left> */}
             <div className="ml-4 text-white flex flex-col gap-4 mt-4">
               <Link
                 to="home"
@@ -114,7 +114,7 @@ const Menu = () => {
                 </p>
               </Link>
             </div>
-          </Fade>
+          {/* </Fade> */}
         </>
       ) : (
         <div className="text-white flex justify-center items-center flex-col gap-4 pt-8 mt-24">
